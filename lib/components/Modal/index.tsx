@@ -4,8 +4,6 @@ import { addEscapeEventListener } from "../../utils/escapeEvent";
 import { toggleOverflow } from "../../utils/toggleOverflow";
 import { handleCloseWithFadeDown } from "../../utils/handleCloseWithFadeDown";
 import { calculateTotalLineNumber } from "../../utils/calculateTotalLineNumber";
-import { AxiosRequestConfig } from "axios";
-// import { useAxios } from "../../hooks/useAxios";
 
 type ModalProps = {
   open: boolean;
@@ -19,7 +17,6 @@ type ModalProps = {
   fadeDelay?: number;
   fadeDown?: number;
   showMore?: boolean;
-  apiConfig?: AxiosRequestConfig<unknown>;
 };
 
 export function Modal({
@@ -34,7 +31,6 @@ export function Modal({
   fadeDelay = 0,
   fadeDown = 0,
   showMore = false,
-  // apiConfig,
 }: ModalProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [totalLineNumber, setTotalLineNumber] = useState<number>(0);
@@ -43,18 +39,6 @@ export function Modal({
   const handleShowMore = () => {
     setLineNumberDisplay(lineNumberDisplay + 7);
   };
-
-  ///// Axios
-
-  // const [apiLoading, apiData, apiError, callApi] = useAxios(apiConfig || {}, false);
-
-  // useEffect(() => {
-  //   if (open && apiConfig) {
-  //     callApi();
-  //   }
-  // }, [open, apiConfig, callApi]);
-
-  ////
 
   useEffect(() => {
     if (open) {

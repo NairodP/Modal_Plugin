@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import { Modal } from "../lib/components/Modal";
-import { Form } from "../lib/components/Form";
+// import { Form } from "../lib/components/Form";
 
 export default function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -11,7 +11,9 @@ export default function App() {
   return (
     <>
       <h1>Test du composant</h1>
-      <button onClick={() => setOpenModal(true)}>Modal</button>
+      <button className="modal-button" onClick={() => setOpenModal(true)}>
+        Open Modal
+      </button>
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
@@ -22,11 +24,7 @@ export default function App() {
         // showMore
         unclosableWindow
         // noCloseButton
-        customCloseButton={<button className="custom-close">!</button>}
-        // apiConfig={{
-        //   method: "get",
-        //   url: "",
-        // }}
+        // customCloseButton={<button className="custom-close">!</button>}
       >
         {/* <p>Test du contenu de la modal</p>
         <p>
@@ -45,7 +43,7 @@ export default function App() {
           repellendus! Lorem ipsum dolor.
         </p> */}
 
-        <Form />
+        {/* <Form fadeDown={0.2} onClose={() => setOpenModal(false)} /> */}
 
         {/* <h2>seconde modal ?</h2>
         <button onClick={() => setOpenModalTwo(true)}>

@@ -1,10 +1,24 @@
 import styles from "./styles.module.css";
+import { handleCloseWithFadeDown } from "../../utils/handleCloseWithFadeDown";
 
-export function Form() {
+
+type FormProps = {
+  onClose: () => void;
+  fadeDown?: number;
+};
+
+export function Form({ onClose, fadeDown = 0, }: FormProps) {
   return (
     <div className={styles.emailForm}>
       <h2>Recevez nos offres en avant première !</h2>
-      <form action="#" method="post">
+      <form
+        action="#"
+        method="post"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleCloseWithFadeDown(fadeDown, onClose);
+        }}
+      >
         <label htmlFor="email-input">Email</label>
         <input
           type="email"

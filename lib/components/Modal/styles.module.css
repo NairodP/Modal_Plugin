@@ -1,41 +1,3 @@
-:root {
-  --white: #fefefe;
-  --primary-color: #ff0052;
-  --primary-color-hover: #22272a;
-  --fade-duration: 0ms;
-  --fade-delay: 0ms;
-}
-
-button {
-  border-radius: 8px;
-  border: none;
-  padding: 0.6em 1.2em;
-  font-size: 1.5em;
-  font-weight: 500;
-  font-family: inherit;
-  transition: 0.3s;
-  background-color: var(--primary-color);
-  color: var(--white);
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--primary-color-hover);
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-svg {
-  max-width: 35px;
-  max-height: 35px;
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -134,7 +96,7 @@ svg {
   display: block;
   cursor: pointer;
   font-size: 20px;
-  color: var(--white);
+  color: #fff;
   background-color: rgb(24, 24, 24);
   border-radius: 50%;
   text-align: center;
@@ -156,7 +118,7 @@ svg {
 
 .showMoreButton {
   background: none;
-  color: var(--primary-color);
+  color: #FF0066;
   border: none;
   font-size: 1em;
   cursor: pointer;
@@ -184,7 +146,7 @@ svg {
 }
 
 [close-modal="true"] {
-  color: var(--primary-color);
+  color: #FF0066;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
@@ -193,6 +155,6 @@ svg {
 }
 
 [close-modal="true"]:hover {
-  color: var(--primary-color-hover);
-  border-bottom: 2px solid var(--primary-color-hover);
+  color: #22272a;
+  border-bottom: 2px solid #22272a;
 }
