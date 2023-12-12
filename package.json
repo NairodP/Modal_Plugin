@@ -1,6 +1,6 @@
 {
   "name": "@nairodp/modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -21,7 +21,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "axios": "^1.6.2"
-
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
@@ -41,8 +40,6 @@
     "vite-plugin-dts": "^3.6.3",
     "vite-plugin-lib-inject-css": "^1.3.0",
     "axios": "^1.6.2"
-
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
