@@ -1,9 +1,9 @@
-#Modal React
+# Modal React
 La bibliothèque Modal React offre une implémentation simple et personnalisable de fenêtres modales pour les applications React, avec la flexibilité des props pour une intégration facile.
 
 ---
 
-##Installation
+## Installation
 
 ```bash
 npm install @nairodp/modal
@@ -17,7 +17,7 @@ yarn add @nairodp/modal
 
 ---
 
-##Utilisation
+## Utilisation
 
 ```
 import { Modal } from "@nairodp/modal";
@@ -43,18 +43,18 @@ return (
 
 ---
 
-##Exemples
+## Exemples
 
 Pour des exemples détaillés, veuillez vous référer au site https://localhost/5175.
 
 ---
 
-##TypeScript
+## TypeScript
 
 La bibliothèque est écrite en TypeScript, offrant ainsi une expérience de développement plus sécurisée et intuitive.
 
 ---
 
-##Publication sur npm
+## Publication sur npm
 
 La bibliothèque Modal React est disponible en tant que package npm. Pour les dernières mises à jour et la dernière version, veuillez consulter [ce lien] (https://www.npmjs.com/package/@nairodp/modal).
