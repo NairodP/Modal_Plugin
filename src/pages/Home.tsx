@@ -1,9 +1,9 @@
-import "./App.css";
+import "../css/App.css";
 import { useState } from "react";
-import { Modal } from "../lib/components/Modal";
+import { Modal } from "../../lib/components/Modal";
 // import { Form } from "../lib/components/Form";
 
-export default function App() {
+export default function Home() {
   const [openModal, setOpenModal] = useState(false);
 
   // const [openModalTwo, setOpenModalTwo] = useState(false);
@@ -21,12 +21,13 @@ export default function App() {
         fadeDuration={600}
         fadeDelay={0}
         fadeDown={0.2}
-        // showMore
-        unclosableWindow
+        showMore
+        // ESCNotActive
         // noCloseButton
+        // pageUrl="http://localhost:5173/product"
         // customCloseButton={<button className="custom-close">!</button>}
       >
-        {/* <p>Test du contenu de la modal</p>
+        {/* <p>Test du contenu de la modal</p> */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
           nesciunt suscipit enim similique, ipsum repellendus! Lorem ipsum dolor
@@ -41,7 +42,7 @@ export default function App() {
           quia ea odit placeat!Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Harum nesciunt suscipit enim similique, ipsum
           repellendus! Lorem ipsum dolor.
-        </p> */}
+        </p>
 
         {/* <Form fadeDown={0.2} onClose={() => setOpenModal(false)} /> */}
 

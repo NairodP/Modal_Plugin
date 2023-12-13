@@ -4,11 +4,12 @@ import { addEscapeEventListener } from "../../utils/escapeEvent";
 import { toggleOverflow } from "../../utils/toggleOverflow";
 import { handleCloseWithFadeDown } from "../../utils/handleCloseWithFadeDown";
 import { calculateTotalLineNumber } from "../../utils/calculateTotalLineNumber";
+// import axios from "axios";
 
 type ModalProps = {
   open: boolean;
   onClose: () => void;
-  unclosableWindow?: boolean;
+  ESCNotActive?: boolean;
   customCloseButton?: string | React.ReactNode | JSX.Element;
   noCloseButton?: boolean;
   modalStyle?: React.CSSProperties;
@@ -17,12 +18,13 @@ type ModalProps = {
   fadeDelay?: number;
   fadeDown?: number;
   showMore?: boolean;
+  pageUrl?: string;
 };
 
 export function Modal({
   open,
   onClose,
-  unclosableWindow = false,
+  ESCNotActive = false,
   customCloseButton,
   noCloseButton = false,
   modalStyle,
@@ -31,10 +33,12 @@ export function Modal({
   fadeDelay = 0,
   fadeDown = 0,
   showMore = false,
+  // pageUrl = "",
 }: ModalProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [totalLineNumber, setTotalLineNumber] = useState<number>(0);
   const [lineNumberDisplay, setLineNumberDisplay] = useState<number>(7);
+  // const [ajaxContent, setAjaxContent] = useState<string | null>(null);
 
   const handleShowMore = () => {
     setLineNumberDisplay(lineNumberDisplay + 7);
@@ -92,7 +96,7 @@ export function Modal({
       <div
         className={styles.modalBlocker}
         onClick={() => {
-          if (!unclosableWindow) {
+          if (!ESCNotActive) {
             handleCloseWithFadeDown(fadeDown, onClose);
           }
         }}
