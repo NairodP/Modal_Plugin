@@ -17,11 +17,11 @@
 }
 
 .animateFadeUp {
-  animation: fade-up 200ms ease-in forwards;
+  animation: fade-up 200ms linear forwards;
 }
 
 .animateFadeDown {
-  animation: fade-down 200ms ease-in forwards;
+  animation: fade-down 200ms linear forwards;
 }
 
 .opacity0 {
@@ -41,30 +41,20 @@
   z-index: 1;
   padding: 30px;
   box-sizing: border-box;
-  background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
-  text-align: center;
-  display: block;
-}
-
-.modalOverlay::before,
-.modalBlocker::before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.05em;
 }
 
 .modalBlocker {
+  z-index: 2;
   background-color: transparent;
 }
 
 .modal {
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
-  z-index: 2;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
   max-width: 500px;
   box-sizing: border-box;
   width: 90%;
@@ -102,8 +92,12 @@
   text-align: center;
 }
 
-.transparentBackground {
-  background-color: transparent;
+.defaultCloseButton {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 .modalContent {

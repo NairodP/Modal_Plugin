@@ -1,6 +1,8 @@
 import styles from "../components/Modal/styles.module.css";
 
-export function calculateTotalLineNumber(contentRef: React.RefObject<HTMLDivElement>) {
+export function calculateTotalLineNumber(
+  contentRef: React.RefObject<HTMLDivElement>
+) {
   if (contentRef.current) {
     const children = contentRef.current.children;
     const lineNumbersArray: number[] = [];
@@ -15,11 +17,15 @@ export function calculateTotalLineNumber(contentRef: React.RefObject<HTMLDivElem
       const lineHeight = parseInt(
         window.getComputedStyle(child).lineHeight || "0"
       );
+
       const totalLines = Math.ceil(child.scrollHeight / lineHeight) - 1;
       lineNumbersArray.push(totalLines);
     }
 
-    return lineNumbersArray.reduce((acc, currentNumber) => acc + currentNumber, 0);
+    return lineNumbersArray.reduce(
+      (acc, currentNumber) => acc + currentNumber,
+      0
+    );
   }
 
   return 0;

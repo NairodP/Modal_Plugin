@@ -1,12 +1,14 @@
 import "../css/App.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Modal } from "../../lib/components/Modal";
-// import { Form } from "../lib/components/Form";
+import Product from "./Product";
+import { Form } from "../components/Form";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false);
 
-  // const [openModalTwo, setOpenModalTwo] = useState(false);
+  const [openModalTwo, setOpenModalTwo] = useState(false);
 
   return (
     <>
@@ -19,15 +21,20 @@ export default function Home() {
         onClose={() => setOpenModal(false)}
         modalStyle={{ textAlign: "center" }}
         fadeDuration={600}
-        fadeDelay={0}
+        fadeDelay={700}
         fadeDown={0.2}
         showMore
+        showMoreStyle={{ color: "red" }}
+        defaultNumberOfLine={5}
+        lineAddOnShowMore={5}
+        // totalDisplay
         // ESCNotActive
         // noCloseButton
-        // pageUrl="http://localhost:5173/product"
-        // customCloseButton={<button className="custom-close">!</button>}
+        customCloseButton={<button className="custom-close">!</button>}
       >
-        {/* <p>Test du contenu de la modal</p> */}
+        {/* <Product />
+        <Link to="/product">GO to the Page !</Link> */}
+        <p>Test du contenu de la modal</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
           nesciunt suscipit enim similique, ipsum repellendus! Lorem ipsum dolor
@@ -43,14 +50,14 @@ export default function Home() {
           adipisicing elit. Harum nesciunt suscipit enim similique, ipsum
           repellendus! Lorem ipsum dolor.
         </p>
-
         {/* <Form fadeDown={0.2} onClose={() => setOpenModal(false)} /> */}
-
         {/* <h2>seconde modal ?</h2>
-        <button onClick={() => setOpenModalTwo(true)}>
-        Seconde Modal
-      </button>
-        <Modal open={openModalTwo} onClose={() => setOpenModalTwo(false)}></Modal> */}
+        <button onClick={() => setOpenModalTwo(true)}>Seconde Modal</button>
+        <Modal
+          open={openModalTwo}
+          onClose={() => setOpenModalTwo(false)}
+          ESCNotActive
+        ></Modal> */}
       </Modal>
     </>
   );

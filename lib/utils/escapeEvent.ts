@@ -1,6 +1,11 @@
 type EventListener = (event: Event) => void;
 
-export function addEscapeEventListener(action: EventListener): () => void {
+export function addEscapeEventListener(action: EventListener, ESCNotActive?: boolean): () => void {
+
+  if (ESCNotActive) {
+    // Si ESCNotActive est true, retourne une fonction vide (sans ajouter d'écouteur)
+    return () => {};
+  }
   const handleEscapeKey = (event: KeyboardEvent) => {
     if (event.key === "Escape") {
       action(event);

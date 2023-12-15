@@ -13,6 +13,11 @@ export default defineConfig({
     libInjectCss(),
     dts({ include: ['lib'] })
   ],
+  server: {
+    proxy: {
+      '/api': 'http://localhost:5173', // Remplacez par l'URL de votre serveur backend
+    },
+  },
   build: {
     copyPublicDir: false,
     lib: {

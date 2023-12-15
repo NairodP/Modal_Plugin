@@ -1,0 +1,63 @@
+/* Form exemple : */
+
+label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0 0 20px;
+}
+
+.emailForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.emailInput {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.confirmButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.confirmButton:hover {
+  background-color: #2980b9;
+}
+
+.exitButton {
+  background-color: #ea3232;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.exitButton:hover {
+  background-color: #9e2222;
+  color: #fff;
+  border-bottom: none;
+}
+
+.animateFadeDown {
+  animation: fade-down 200ms ease-in forwards;
+}
