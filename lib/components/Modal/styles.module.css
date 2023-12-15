@@ -44,16 +44,23 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.modalOverlay::before,
+.modalBlocker::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em;
+}
+
 .modalBlocker {
-  z-index: 2;
   background-color: transparent;
 }
 
 .modal {
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
   max-width: 500px;
   box-sizing: border-box;

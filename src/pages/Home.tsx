@@ -24,13 +24,13 @@ export default function Home() {
         fadeDelay={700}
         fadeDown={0.2}
         showMore
-        showMoreStyle={{ color: "red" }}
-        defaultNumberOfLine={5}
-        lineAddOnShowMore={5}
+        // showMoreStyle={{ color: "red" }}
+        defaultNumberOfLine={7}
+        lineAddOnShowMore={7}
         // totalDisplay
         // ESCNotActive
         // noCloseButton
-        customCloseButton={<button className="custom-close">!</button>}
+        // customCloseButton={<button className="custom-close">!</button>}
       >
         {/* <Product />
         <Link to="/product">GO to the Page !</Link> */}
@@ -39,6 +39,26 @@ export default function Home() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
           nesciunt suscipit enim similique, ipsum repellendus! Lorem ipsum dolor
           Lorem ipsum dolor sit amet, <span close-modal="true">close</span>{" "}
+          consectetur adipisicing elit. Harum nesciunt suscipit enim similique,
+          ipsum repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Pariatur magni eum sapiente inventore sunt fugit quia ea odit
+          placeat!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Harum nesciunt suscipit enim similique, ipsum repellendus! Lorem ipsum
+          dolor. Ipsum repellendus! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Pariatur magni eum sapiente inventore sunt fugit
+          quia ea odit placeat!Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Harum nesciunt suscipit enim similique, ipsum
+          repellendus! Lorem ipsum dolor.
+          consectetur adipisicing elit. Harum nesciunt suscipit enim similique,
+          ipsum repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Pariatur magni eum sapiente inventore sunt fugit quia ea odit
+          placeat!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Harum nesciunt suscipit enim similique, ipsum repellendus! Lorem ipsum
+          dolor. Ipsum repellendus! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Pariatur magni eum sapiente inventore sunt fugit
+          quia ea odit placeat!Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Harum nesciunt suscipit enim similique, ipsum
+          repellendus! Lorem ipsum dolor.
           consectetur adipisicing elit. Harum nesciunt suscipit enim similique,
           ipsum repellendus! Lorem ipsum dolor sit, amet consectetur adipisicing
           elit. Pariatur magni eum sapiente inventore sunt fugit quia ea odit
