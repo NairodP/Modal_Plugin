@@ -111,11 +111,11 @@
 .modalContent {
   --line-number: 4;
   --total-lines: calc(var(--line-number) + 1);
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: var(--total-lines);
-  line-clamp: var(--total-lines);
-  -webkit-box-orient: vertical;
+  overflow: hidden!important;
+  display: -webkit-box!important;
+  -webkit-line-clamp: var(--total-lines)!important;
+  line-clamp: var(--total-lines)!important;
+  -webkit-box-orient: vertical!important;
 }
 
 .showMoreButton {

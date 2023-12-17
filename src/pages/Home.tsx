@@ -31,7 +31,9 @@ export default function Home() {
         // ESCNotActive
         // noCloseButton
         // customCloseButton={<button className="custom-close">!</button>}
+        customCloseButton={"fermer"}
       >
+      
         {/* <Product />
         <Link to="/product">GO to the Page !</Link> */}
         <p>Test du contenu de la modal</p>

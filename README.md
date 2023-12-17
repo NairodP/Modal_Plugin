@@ -16,6 +16,19 @@ yarn add @nairodp/modal
 ```
 
 
+## Node Version
+
+Ce projet a été développé et testé avec Node.js version 21.2.0. L'utilisation d'une version ultérieure de Node.js peut entraîner des problèmes de compatibilité. Pour garantir une expérience sans bug, assurez-vous d'utiliser Node.js version 21.2.0.
+
+Pour installer Node.js version 21.2.0, vous pouvez utiliser un gestionnaire de versions comme [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) en exécutant les commandes suivantes dans votre terminal :
+
+```bash
+nvm install 21.2.0
+nvm use 21.2.0
+```
+
+Si vous utilisez un autre gestionnaire de versions ou une méthode d'installation différente, assurez-vous d'avoir la version correcte de Node.js pour éviter tout problème lors de l'utilisation de cette bibliothèque.
+
 
 ## Utilisation
 
@@ -45,7 +58,7 @@ return (
 
 ## Exemples
 
-Pour des exemples détaillés, veuillez vous référer au site https://localhost/5175.
+Pour des exemples détaillés, veuillez vous référer au site https://nairodp.github.io/Modal-Documentation/.
 
 
 
