@@ -32,6 +32,7 @@ export default function Home() {
         // noCloseButton
         // customCloseButton={<button className="custom-close">!</button>}
         customCloseButton={"fermer"}
+        customCloseButtonClass={"testCloseButtonClass"}
       >
       
         {/* <Product />

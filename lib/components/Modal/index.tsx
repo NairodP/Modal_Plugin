@@ -16,6 +16,8 @@ type ModalProps = {
   ESCNotActive?: boolean;
   // Personnalise le bouton de fermeture de la modal
   customCloseButton?: string | React.ReactNode | JSX.Element;
+  // Classe personnalisée pour le bouton de fermeture
+  customCloseButtonClass?: string;
   // Désactive le bouton de fermeture de la modal si true
   noCloseButton?: boolean;
   // Style personnalisé pour la modal
@@ -45,6 +47,7 @@ export function Modal({
   onClose,
   ESCNotActive = false,
   customCloseButton,
+  customCloseButtonClass,
   noCloseButton = false,
   modalStyle,
   children = "Contenu de la modal",
@@ -195,6 +198,8 @@ export function Modal({
             <span
               id="btnCloseModal"
               className={`${
+                customCloseButtonClass || ""
+              } ${
                 customCloseButton ? styles.defaultCloseButton : styles.close
               }`}
               onClick={() => handleCloseWithFadeDown(adjustFadeDown, onClose)}
