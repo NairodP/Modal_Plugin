@@ -193,7 +193,7 @@ export function Modal({
           {/* Bouton de fermeture de la modal */}
           {!noCloseButton && (
             <span
-              id={styles.btnCloseModal}
+              id="btnCloseModal"
               className={`${
                 customCloseButton ? styles.defaultCloseButton : styles.close
               }`}
