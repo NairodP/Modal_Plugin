@@ -70,4 +70,9 @@ La bibliothèque est écrite en TypeScript, offrant ainsi une expérience de dé
 
 ## Publication sur npm
 
-La bibliothèque Modal React est disponible en tant que package npm. Pour les dernières mises à jour et la dernière version, veuillez consulter [ce lien] (https://www.npmjs.com/package/@nairodp/modal).
+La bibliothèque Modal React est disponible en tant que package npm. Pour les dernières mises à jour et la dernière version, veuillez consulter [ce lien](https://www.npmjs.com/package/@nairodp/modal).
+
+
+## Crédits
+
+Cette bibliothèque Modal React a été créée en s'inspirant de la bibliothèque Modal jQuery de [kylefox](https://github.com/kylefox).
