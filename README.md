@@ -62,6 +62,45 @@ Pour des exemples détaillés, veuillez vous référer au site https://nairodp.g
 
 
 
+## Props Utilisables
+
+Voici la liste des propriétés que vous pouvez utiliser avec le composant Modal React, ainsi que les types de données qu'elles acceptent :
+
+- **`open`** (*boolean*): **(Obligatoire)** Indique si la modal est ouverte ou fermée.
+
+- **`onClose`** (*() => void*): **(Obligatoire)** Fonction à appeler pour fermer la modal.
+
+- **`ESCNotActive`** (*boolean, facultatif*): Désactive la fermeture de la modal avec la touche Escape si true.
+
+- **`customCloseButton`** (*string | React.ReactNode | JSX.Element, facultatif*): Personnalise le bouton de fermeture de la modal.
+
+- **`customCloseButtonClass`** (*string, facultatif*): Classe personnalisée pour le bouton de fermeture.
+
+- **`noCloseButton`** (*boolean, facultatif*): Désactive le bouton de fermeture de la modal si true.
+
+- **`modalStyle`** (*React.CSSProperties, facultatif*): Style personnalisé pour la modal.
+
+- **`children`** (*React.ReactNode, facultatif*): Contenu de la modal.
+
+- **`fadeDuration`** (*number, facultatif*): Durée de l'animation d'apparition de la modal en millisecondes.
+
+- **`fadeDelay`** (*number, facultatif*): Temps d'attente avant le lancement de l'animation d'apparition de la modal en millisecondes.
+
+- **`fadeDown`** (*number, facultatif*): Temps de disparition de la modal.
+
+- **`showMore`** (*boolean, facultatif*): Affiche un bouton "Show More" si true.
+
+- **`showMoreStyle`** (*React.CSSProperties, facultatif*): Style personnalisé pour le bouton "Show More".
+
+- **`defaultNumberOfLine`** (*number, facultatif*): Nombre de lignes à afficher par défaut.
+
+- **`lineAddOnShowMore`** (*number, facultatif*): Nombre de lignes à ajouter lors du clic sur "Show More".
+
+- **`totalDisplay`** (*boolean, facultatif*): Affiche tout le contenu sans bouton "Show More" si true.
+
+
+
+
 ## TypeScript
 
 La bibliothèque est écrite en TypeScript, offrant ainsi une expérience de développement plus sécurisée et intuitive.
