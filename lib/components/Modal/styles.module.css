@@ -86,12 +86,13 @@
 }
 
 .close {
+  --dimension: 30px;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: -12.5px;
-  right: -12.5px;
-  line-height: 25px;
+  width: var(--dimension);
+  height: var(--dimension);
+  line-height: var(--dimension)!important;
+  top: calc(-1 * (var(--dimension) / 2.4));
+  right: calc(-1 * (var(--dimension) / 2.4));
   cursor: pointer;
   font-size: 20px;
   color: #fff;
@@ -111,16 +112,16 @@
 .modalContent {
   --line-number: 4;
   --total-lines: calc(var(--line-number) + 1);
-  overflow: hidden!important;
-  display: -webkit-box!important;
-  -webkit-line-clamp: var(--total-lines)!important;
-  line-clamp: var(--total-lines)!important;
-  -webkit-box-orient: vertical!important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: var(--total-lines) !important;
+  line-clamp: var(--total-lines) !important;
+  -webkit-box-orient: vertical !important;
 }
 
 .showMoreButton {
   background: none;
-  color: #FF0066;
+  color: #ff0066;
   border: none;
   font-size: 1em;
   cursor: pointer;
@@ -148,7 +149,7 @@
 }
 
 [close-modal="true"] {
-  color: #FF0066;
+  color: #ff0066;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
@@ -160,4 +161,3 @@
   color: #22272a;
   border-bottom: 2px solid #22272a;
 }
-

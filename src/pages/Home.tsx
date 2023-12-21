@@ -19,20 +19,20 @@ export default function Home() {
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
-        modalStyle={{ textAlign: "center" }}
-        fadeDuration={600}
-        fadeDelay={700}
-        fadeDown={0.2}
-        showMore
+        // modalStyle={{ textAlign: "center" }}
+        // fadeDuration={600}
+        // fadeDelay={700}
+        // fadeDown={0.2}
+        // showMore
         // showMoreStyle={{ color: "red" }}
-        defaultNumberOfLine={7}
-        lineAddOnShowMore={7}
+        // defaultNumberOfLine={7}
+        // lineAddOnShowMore={7}
         // totalDisplay
         // ESCNotActive
         // noCloseButton
         // customCloseButton={<button className="custom-close">!</button>}
-        customCloseButton={"fermer"}
-        customCloseButtonClass={"testCloseButtonClass"}
+        // customCloseButton={"fermer"}
+        // customCloseButtonClass={"testCloseButtonClass"}
       >
       
         {/* <Product />
